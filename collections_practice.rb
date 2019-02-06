@@ -26,11 +26,9 @@ array.uniq
 end
 
 def merge_data(keys, data)
-hash = Hash.new
-keys.each_with_index do |key, index|
-  hash[key] = data[index]
-end
-hash
+  merged = []
+  keys.each {|i| data.first.map {|k,v| if i.values[0] == k then merged << i.merge(v) end}}
+  merged
 end
 
 
