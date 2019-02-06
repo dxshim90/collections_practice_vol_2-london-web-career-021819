@@ -31,4 +31,6 @@ def merge_data(keys, data)
   merged
 end
 
+def find_cool 
+
 
