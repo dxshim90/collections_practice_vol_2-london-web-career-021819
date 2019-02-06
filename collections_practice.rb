@@ -34,6 +34,9 @@ end
 def find_cool(array)
   array.each do |a, b| 
     if v.include?("cool")
-      return 
+      return a[:name]
+    end
+  end
+end
 
 
