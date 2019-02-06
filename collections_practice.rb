@@ -33,7 +33,7 @@ end
 
 def find_cool(array)
   array.each do |a, b| 
-    if v.include?("cool")
+    if b.include?("cool")
       return a[:name]
     end
   end
